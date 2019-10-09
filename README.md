@@ -1,2 +1,2 @@
 # Trilateration
-Code for Trilateration calculation with Gimbal Proximity Beacons
+Trilateration with Gimbal Proximity Beacons
