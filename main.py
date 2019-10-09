@@ -12,7 +12,7 @@ import blescan
 import sys
 import bluetooth._bluetooth as bluez
 
-nodes = [0,4,6.8,4,0.65,0,6.5,.2]
+nodes = [0,7,9,7,0,0,9,0]
 beacons = ["a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1", "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2", "c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3", "d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4"]
 iterations = 25
 num_beacons = len(beacons)
@@ -73,9 +73,9 @@ if __name__=="__main__":
 	d1 = pathloss(rssi[0], tx_power[0])
 	d2 = pathloss(rssi[1], tx_power[1])
 	d3 = pathloss(rssi[2], tx_power[2])
-	p = 6.8
+	p = 9
 	q = 0
-	r = 4
+	r = 7
 	receiver = trilateration(d1, d2, d3, p, q, r)
 	print receiver
 
